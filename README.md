@@ -1,10 +1,11 @@
 # Task_1 от 01.10.2026
 Bitrix: курс контент-менеджера https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=34
 
-## Сдать тесты в кусе контент-менеджера
+## 1. Сдать тесты в курсе контент-менеджера
 ![Финальный тест](./docs/Final_test_result.png)
 
-## Установить битрикс и начать разбираться в админке
+---
+## 2. Установить битрикс и начать разбираться в админке
 
 Битрикс развернут в Docker Desktop.
 
@@ -13,27 +14,32 @@ Bitrix: курс контент-менеджера https://dev.1c-bitrix.ru/lear
 
 6. Скачайте установщик bitrixsetup.php (доплненный)
 
+- войдите внутрь контейнера под пользователем bitrix
 ```cmd
-   # войдите внутрь контейнера под пользователем bitrix
-   docker compose exec --user=bitrix php sh
-   
-   # перейдите в папку сайта
-   cd /opt/www/
-   
-   # скачайте файл для установки продукта
-   wget https://www.1c-bitrix.ru/download/scripts/bitrixsetup.php
-   
-   # скачать архив
-   wget https://www.1c-bitrix.ru/download/business_encode.tar.gz
+docker compose exec --user=bitrix php sh
+```
+- перейдите в папку сайта
+```cmd
+cd /opt/www/
+```
+- скачайте файл для установки продукта
+```cmd
+wget https://www.1c-bitrix.ru/download/scripts/bitrixsetup.php
+```
+- скачайте архив
+```cmd
+wget https://www.1c-bitrix.ru/download/business_encode.tar.gz
 ```
 
 7. Запустите установку демоверсии
+
 Откройте браузер и перейдите по адресу:
 ```
-   http://localhost:8588/bitrixsetup.php?test=1
+http://localhost:8588/bitrixsetup.php?test=1
 ```
 
-Благодаря параметру test скрипт обнаружит, что архив уже скачан и предложет распаковать его.
+Благодаря параметру test скрипт обнаружит, что архив уже скачан и предложит его распаковать.
 
-## Сделать шаблон компонента news.list
+---
+## 3. Сделать шаблон компонента news.list
 
