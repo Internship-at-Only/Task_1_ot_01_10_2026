@@ -42,4 +42,6 @@ http://localhost:8588/bitrixsetup.php?test=1
 
 ---
 ## 3. Сделать шаблон компонента news.list
-
+Новый шаблон находится в папке .\src\local\templates\.default\components\bitrix\news.list\tile_news
+За основу взят встроенный шаблон table.
+![Финальный тест](./docs/news.list_template.png)

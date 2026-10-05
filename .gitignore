@@ -44,3 +44,5 @@ containers/postgres/data
 containers/redis/data
 containers/minio/data
 /templates/.default/components/bitrix/news.list/tile_news/news-list-tile.html
+
+*.html
