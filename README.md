@@ -10,7 +10,7 @@ Bitrix: курс контент-менеджера https://dev.1c-bitrix.ru/lear
 Битрикс развернут в Docker Desktop.
 
 При установке возникла проблема: ошибка при скачивании архива. 
-Которая была решена следующим образом.
+Которая была решена следующим образом (добавлю сюда для заметки - вдруг пригодится).
 
 6. Скачайте установщик bitrixsetup.php (доплненный)
 
@@ -42,7 +42,10 @@ http://localhost:8588/bitrixsetup.php?test=1
 
 ---
 ## 3. Сделать шаблон компонента news.list
-Новый шаблон находится в папке .\src\local\templates\.default\components\bitrix\news.list\tile_news
+Шааблон на основе данных из папки build находится в папке .\src\local\templates\.default\components\bitrix\news.list\barba
+
+
+В папке .\src\local\templates\.default\components\bitrix\news.list\tile_news находится свой шаблон. 
 
 За основу взят встроенный шаблон table.
 ![Финальный тест](./docs/news.list_template.png)
