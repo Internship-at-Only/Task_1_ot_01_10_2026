@@ -44,8 +44,8 @@ http://localhost:8588/bitrixsetup.php?test=1
 ## 3. Сделать шаблон компонента news.list
 Шааблон на основе данных из папки build находится в папке .\src\local\templates\.default\components\bitrix\news.list\barba
 
+![Финальный тест](./docs/barba_template.png)
 
-В папке .\src\local\templates\.default\components\bitrix\news.list\tile_news находится свой шаблон. 
-
+В папке .\src\local\templates\.default\components\bitrix\news.list\tile_news находится свой шаблон.
 За основу взят встроенный шаблон table.
 ![Финальный тест](./docs/news.list_template.png)
